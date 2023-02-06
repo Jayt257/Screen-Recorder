@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/toggleBtn"
+        android:src="@drawable/ic_video"
+        android:tint="@color/white"
+        app:backgroundTint="#4458C8"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="28dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#4458C8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_above="@+id/toggleBtn"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </VideoView>
+    
+</RelativeLayout>
